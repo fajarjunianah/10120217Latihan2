@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">10120217Latihan2</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="fb">CONNECT WITH FACEBOOK</string>
+    <string name="noakun">doesnt have account?</string>
+    <string name="reg">Register</string>
+    <string name="email">Email</string>
+    <string name="hp">Phone Number</string>
+    <string name="p">Female</string>
+    <string name="l">Male</string>
+    <string name="goldar">Blood Type</string>
+    <string name="reshus">Reshus</string>
+    <string name="repass">Retype Password</string>
+    <string name="personal">Personal</string>
+    <string name="organisasi">Organization</string>
+    <string name="job">Job</string>
+    <string name="almt">Home Address</string>
+    <string name="defaultalmt">Default Location</string>
+    <string name="setuju">Agree with Terms and Conditions</string>
+    <string name="reg2">REGISTER</string>
+    <string name="almostlog">Almost There</string>
+    <string name="almostdesc">Thank you for registering with us. One more step, you need to check your email to active your account</string>
+    <string name="verify">VERIFY</string>
+    <string name="verivy2">Verify your Account</string>
+    <string name="verifydesc">We have send verification code to your email</string>
+    <string name="code">enter verification code here...</string>
+    <string name="send">SEND</string>
+    <string name="send2">doesnt get the code?  Register</string>
+    <string name="resend">Resend</string>
+    <string name="namaku">FAJAR JUNIANSAH SADIKIN</string>
+    <string name="goldarku">Blood type : B</string>
+</resources>

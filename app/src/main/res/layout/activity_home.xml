@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <!-- 25-04-2023, NIM : 10120217, FAJAR JUNIANSAH SADIKIN, IF-6 -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen161dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_header_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/side_menu"
+            android:layout_width="@dimen/dimen30dp"
+            android:layout_height="@dimen/dimen30dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginTop="@dimen/dimen20dp"
+            android:src="@drawable/ic_side_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen30dp"
+            android:layout_height="@dimen/dimen30dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintBottom_toBottomOf="@id/side_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/side_menu" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_marginTop="@dimen/dimen100dp"
+            android:background="@drawable/profil_bulat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_marginTop="@dimen/dimen100dp"
+            android:src="@drawable/fajar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/namaku"
+            android:textColor="@color/light_blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+        <TextView
+            android:id="@+id/blodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goldarku"
+            android:textColor="@color/font_title"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+        <View
+            android:id="@+id/garis_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen1dp"
+            android:layout_marginTop="@dimen/dimen15dp"
+            android:background="@drawable/garis2"
+            app:layout_constraintTop_toBottomOf="@+id/blodtype" />
+
+        <TextView
+            android:id="@+id/angka75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="75"
+            android:textColor="@color/light_blue"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/angka100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garis_2" />
+
+        <TextView
+            android:id="@+id/angka100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20dp"
+            android:text="100"
+            android:textColor="@color/light_blue"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garis_2" />
+
+        <TextView
+            android:id="@+id/angka330"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="330"
+            android:textColor="@color/light_blue"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/angka100"
+            app:layout_constraintTop_toBottomOf="@+id/garis_2" />
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:text="BLOOD GIVE"
+            android:textColor="@color/font_desc"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/angka75"
+            app:layout_constraintStart_toStartOf="@+id/angka75"
+            app:layout_constraintTop_toBottomOf="@+id/angka75" />
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:text="BLOOD RECIVE"
+            android:textColor="@color/font_desc"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/angka100"
+            app:layout_constraintStart_toStartOf="@+id/angka100"
+            app:layout_constraintTop_toBottomOf="@+id/angka100" />
+
+        <TextView
+            android:id="@+id/description3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:text="THANKS"
+            android:textColor="@color/font_desc"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/angka330"
+            app:layout_constraintStart_toStartOf="@+id/angka330"
+            app:layout_constraintTop_toBottomOf="@+id/angka330" />
+
+        <View
+            android:id="@+id/garis3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen2dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:background="@drawable/garis2"
+            app:layout_constraintTop_toBottomOf="@+id/description2" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/search_donor_image"
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_marginTop="@dimen/dimen16dp"
+            android:padding="@dimen/dimen3dp"
+            android:src="@drawable/ic_search_donor"
+            app:layout_constraintEnd_toStartOf="@id/blood_needed_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/garis3"
+            app:strokeColor="@color/white" />
+
+        <TextView
+            android:id="@+id/search_donor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Donor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/search_donor_image"
+            app:layout_constraintStart_toStartOf="@id/search_donor_image"
+            app:layout_constraintTop_toBottomOf="@id/search_donor_image" />
+
+
+        <TextView
+            android:id="@+id/near_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Donor Near You"
+            android:textColor="@color/font_desc"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/search_donor"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="@id/search_donor"
+            app:layout_constraintTop_toBottomOf="@id/search_donor" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/blood_needed_image"
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_marginTop="@dimen/dimen16dp"
+            android:padding="@dimen/dimen3dp"
+            android:src="@drawable/ic_blood_needed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/search_donor_image"
+            app:layout_constraintTop_toBottomOf="@id/garis3"
+            app:strokeColor="@color/white" />
+
+        <TextView
+            android:id="@+id/blood_needed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Needed"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/blood_needed_image"
+            app:layout_constraintStart_toStartOf="@id/blood_needed_image"
+            app:layout_constraintTop_toBottomOf="@id/blood_needed_image" />
+
+        <TextView
+            android:id="@+id/user_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 User Neede Blood"
+            android:textColor="@color/font_desc"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/blood_needed"
+            app:layout_constraintStart_toStartOf="@id/blood_needed"
+            app:layout_constraintTop_toBottomOf="@id/blood_needed" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/message_image"
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="@dimen/dimen100dp"
+            android:layout_marginTop="@dimen/dimen16dp"
+            android:padding="@dimen/dimen3dp"
+            android:src="@drawable/ic_message"
+            app:layout_constraintEnd_toStartOf="@id/blood_needed_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/near_you"
+            app:strokeColor="@color/white" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Massage"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/message_image"
+            app:layout_constraintStart_toStartOf="@id/message_image"
+            app:layout_constraintTop_toBottomOf="@id/message_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 New Massagae"
+            android:textColor="@color/font_desc"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/message"
+            app:layout_constraintStart_toStartOf="@id/message"
+            app:layout_constraintTop_toBottomOf="@id/message" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/history_image"
+            android:layout_width="@dimen/dimen100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_donor_history"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/message_image"
+            app:layout_constraintTop_toBottomOf="@id/near_you"
+            app:strokeColor="@color/white" />
+
+        >
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donor History"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/history_image"
+            app:layout_constraintStart_toStartOf="@id/history_image"
+            app:layout_constraintTop_toBottomOf="@id/history_image" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 gives, 2 received"
+            android:textColor="@color/font_desc"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/history"
+            app:layout_constraintStart_toStartOf="@id/history"
+            app:layout_constraintTop_toBottomOf="@id/history" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
